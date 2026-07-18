@@ -588,6 +588,28 @@ header.site-nav {
 .ci-label { font-size: 0.7rem; color: rgba(255,255,255,0.45); letter-spacing: 0.05em; margin-bottom: 0.2rem; }
 .ci-val { font-size: 0.92rem; }
 
+/* ── MORE PROJECTS CTA ── */
+.more-projects-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5rem;
+  background: var(--paper-2);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 2.6rem 3rem;
+}
+
+.more-projects-title { font-size: 1.3rem; margin-bottom: 0.7rem; }
+.more-projects-desc { color: var(--muted); font-size: 0.92rem; max-width: 480px; }
+
+.more-projects-banner .btn { flex-shrink: 0; }
+
+@media (max-width: 800px) {
+  .more-projects-banner { flex-direction: column; align-items: flex-start; padding: 2rem; }
+  .more-projects-banner .btn { width: 100%; justify-content: center; }
+}
+
 /* ── FOOTER ── */
 footer {
   background: var(--navy);
